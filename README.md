@@ -1,7 +1,8 @@
 # Aho-Corasick Benchmark
 
 Inspired by [anknown](https://github.com/anknown/ahocorasick) I wanted to see
-how my Aho-Corasick implementation compared to others'.
+how my [Aho-Corasick
+implementation](https://github.com/BobuSumisu/aho-corasick) compared to others'.
 
 I created a simple [benchmark](main.go) and ran it on my laptop.
 
