@@ -9,10 +9,11 @@ I created a simple [benchmark](main.go) and ran it on my laptop.
 With 512,000 patterns, my implementation has comparable build time and faster
 search time than the other implementations:
 
-    anknown         512000     932.57ms    10.81ms      94000
-    bobusumisu      512000     631.77ms     7.20ms      94000
-    cloudflare      512000    4879.41ms     2.77ms       4490
-    iohub           512000     393.96ms    14.19ms      91986
+          name    patterns         build     search    matches       alloc
+    anknown         512000     1470.74ms    16.20ms      94000    27.94GiB
+    bobusumisu      512000      707.74ms    11.12ms      94000    30.03GiB
+    cloudflare      512000    41318.84ms     4.39ms       4490    53.71GiB
+    iohub           512000      568.90ms    17.86ms      91986    54.08GiB
 
 [cloudflare](https://github.com/cloudflare/ahocorasick) is implemented a bit
 differently though. It doesn't output position of matches but returns indices
